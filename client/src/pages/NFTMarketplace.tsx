@@ -70,9 +70,9 @@ export default function NFTMarketplace() {
         <section className="nft-hero">
           <div className="nft-hero-copy" data-aos="fade-up">
             <p className="nft-eyebrow">DIGILAND MARKET</p>
-            <h1>Create, sell or collect <em>digital items.</em></h1>
-            <p>A curated front-end study of digital ownership, collectible culture, and marketplace discovery. Explore a sample world of unique digital assets.</p>
-            <a className="nft-primary" href="#marketplace">Explore marketplace <ArrowRight size={17} /></a>
+            <h1>Create, sell or collect digital items.</h1>
+            <p>Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable</p>
+            <a className="nft-primary" href="#marketplace">Explore <ArrowRight size={17} /></a>
           </div>
           <div className="nft-hero-art" data-aos="zoom-in" data-aos-delay="120" aria-label="Illustration of a digital NFT cube">
             <div className="cube"><span>NFT</span></div>
@@ -95,7 +95,7 @@ export default function NFTMarketplace() {
         <section className="nft-note" data-aos="fade-up"><p className="nft-eyebrow">A NOTE FROM THE MARKET</p><h2>Built for discovery.<br /><em>Designed for clarity.</em></h2><p>This course-spec study uses sample NFT content and a simulated wallet action. It does not connect a wallet, process transactions, or represent real marketplace activity.</p></section>
       </main>
 
-      <footer className="nft-footer"><div className="nft-logo"><span className="nft-logo-icon">◆</span><span>NEXA <b>NFT WORLD</b></span></div><div><strong>Marketplace</strong><a href="#marketplace">All NFTs</a><a href="#marketplace">Art</a><a href="#marketplace">Music</a></div><div><strong>Resources</strong><a href="#sellers">Help center</a><a href="#sellers">Partners</a><a href="#sellers">Suggestions</a></div><div><strong>Newsletter</strong><p>Get the latest drops in your inbox.</p><label className="newsletter"><input placeholder="Your email" aria-label="Newsletter email" /><button aria-label="Join newsletter"><ArrowRight size={16} /></button></label></div><small>© 2026 NEXA NFT WORLD / Course-spec study project</small></footer>
+      <footer className="nft-footer"><div className="nft-logo"><span className="nft-logo-icon">◆</span><span>NEXA <b>NFT WORLD</b></span></div><div><strong>Resources</strong><a href="#sellers">Help Center</a><a href="#sellers">Partners</a><a href="#sellers">Suggestions</a><a href="#sellers">Discord</a><a href="#sellers">Docs</a></div><div><strong>Community</strong><a href="#sellers">Documentation</a><a href="#sellers">Brand Assets</a><a href="#sellers">Blog</a><a href="#sellers">Forum</a><a href="#sellers">Mailing List</a></div><div><strong>Newsletter</strong><p>Signup for our newsletter to get the latest news in your inbox.</p><label className="newsletter"><input placeholder="Your email" aria-label="Newsletter email" /><button aria-label="Join newsletter"><ArrowRight size={16} /></button></label></div><small>© 2026 NEXA NFT WORLD / Course-spec study project</small></footer>
     </div>
   );
 }

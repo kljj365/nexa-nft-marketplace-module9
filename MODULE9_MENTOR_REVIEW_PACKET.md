@@ -26,8 +26,12 @@
 
 ## Verification record
 
-TypeScript validation and the production Vite build passed after the course-spec replacement. Browser verification confirmed the homepage, Explore marketplace hash, six-card collection content, `#/nft/orbit-01` detail route, and Back to marketplace navigation. The provided example `https://nft-marketplacee.web.app/` was observed read-only for information architecture and visual cues; proprietary branding and artwork were not copied.
+TypeScript validation and the production Vite build passed after the course-spec replacement. The public GitHub Pages configuration is `built` from `gh-pages` (`/`), with source on `main`; the latest source commit is `6567918` (`Add corrected responsive and interaction QA evidence`). Public QA captured desktop (1440×900), tablet (1024×900), and mobile (390×844) views. Source-level verification confirms homepage search, category filtering, hash-routed item details, Back to marketplace navigation, simulated Connect wallet and Place a bid alerts, AOS initialization, and reduced-motion safeguards. The provided example `https://nft-marketplacee.web.app/` was observed read-only for information architecture and visual cues; proprietary branding and artwork were not copied.
 
 ## Student action
 
 Kyle must personally paste the corrected live URL and repository URL into the authenticated FES Module 9 Final Project lesson and click Submit. The prior KJDM Market/portfolio submission must not be used for this review.
+
+## Latest mentor feedback resolution
+
+The mentor reported that the earlier submission showed the portfolio project instead of the required Virtual Internship project. The mentor also confirmed that the existing links do not need to change: after pushing the corrected Virtual Internship build to the same repository, Kyle should click Resubmit personally. The existing repository now contains Nexa NFT World and the existing GitHub Pages URL returns the corrected marketplace title and build. The KJDM portfolio integration is separate and must not be submitted in the FES assignment fields; FES should receive only the Nexa live URL and Nexa repository URL.
