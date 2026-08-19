@@ -36,7 +36,7 @@ export default function NFTMarketplace() {
   const [selected, setSelected] = useState<Nft | undefined>(() => getSelected());
 
   useEffect(() => {
-    AOS.init({ duration: 700, easing: "ease-out-cubic", once: true, offset: 50 });
+    AOS.init({ duration: 1000, easing: "ease", once: false, offset: 0 });
     const onHashChange = () => {
       setSelected(getSelected());
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -44,6 +44,11 @@ export default function NFTMarketplace() {
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("menu__open", menuOpen);
+    return () => document.body.classList.remove("menu__open");
+  }, [menuOpen]);
 
   const visible = useMemo(() => nfts.filter((nft) => {
     const matchesCategory = category === "All NFTs" || nft.category === category;
@@ -68,25 +73,25 @@ export default function NFTMarketplace() {
 
       <main>
         <section className="nft-hero">
-          <div className="nft-hero-copy" data-aos="fade-up">
-            <p className="nft-eyebrow">DIGILAND MARKET</p>
-            <h1>Create, sell or collect digital items.</h1>
-            <p>Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable</p>
-            <a className="nft-primary" href="#marketplace">Explore <ArrowRight size={17} /></a>
+          <div className="nft-hero-copy">
+            <p className="nft-eyebrow" data-aos="fade-up" data-aos-delay="500">DIGILAND MARKET</p>
+            <h1 data-aos="fade-up" data-aos-delay="750">Create, sell or collect digital items.</h1>
+            <p data-aos="fade-up" data-aos-delay="1000">Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable</p>
+            <a className="nft-primary" href="#marketplace" data-aos="fade-up" data-aos-delay="1250">Explore <ArrowRight size={17} /></a>
           </div>
-          <div className="nft-hero-art" data-aos="zoom-in" data-aos-delay="120"><img src={`${import.meta.env.BASE_URL}reference-media/ultraverse-nft.png`} alt="NFT cube connected to digital item cards" /></div>
+          <div className="nft-hero-art" data-aos="fade" data-aos-delay="1250"><img src={`${import.meta.env.BASE_URL}reference-media/ultraverse-nft.png`} alt="NFT cube connected to digital item cards" /></div>
         </section>
 
         <section className="nft-strip" aria-label="Marketplace categories"><span>TOP SELLERS</span><span>BROWSE BY CATEGORY</span><span>MARKETPLACE</span></section>
 
         <section className="nft-content" id="marketplace">
           <div className="nft-section-heading" data-aos="fade-up"><div><p className="nft-eyebrow">EXPLORE THE COLLECTION</p><h2>Find your next <em>digital original.</em></h2></div><p>Discover sample assets across art, music, domains, virtual worlds, and collectibles.</p></div>
-          <div className="nft-controls" data-aos="fade-up" data-aos-delay="80"><div className="nft-category-row" role="group" aria-label="Filter NFT category">{categories.map((item) => <button className={category === item ? "category active" : "category"} key={item} onClick={() => setCategory(item)}>{item}</button>)}</div><span className="result-count">{visible.length} items</span></div>
+          <div className="nft-controls" data-aos="fade-up" data-aos-delay="80"><div className="nft-category-row" role="group" aria-label="Filter NFT category">{categories.map((item, index) => <button className={category === item ? "category active" : "category"} data-aos="fade-right" data-aos-delay={(index + 1) * 100} key={item} onClick={() => setCategory(item)}>{item}</button>)}</div><span className="result-count">{visible.length} items</span></div>
           <div className="nft-grid" aria-live="polite">{visible.map((nft, index) => <NftCard key={nft.id} nft={nft} index={index} />)}</div>
           {!visible.length && <div className="nft-empty"><h3>No items found.</h3><button onClick={() => { setQuery(""); setCategory("All NFTs"); }}>Reset marketplace</button></div>}
         </section>
 
-        <section className="seller-section" id="sellers" data-aos="fade-up"><div><p className="nft-eyebrow">TOP SELLERS</p><h2>Meet the<br /><em>creative orbit.</em></h2></div><div className="seller-list">{["Lina Park", "Niko Vale", "Maya Stone"].map((seller, index) => <div className="seller-row" key={seller}><span>0{index + 1}</span><strong>{seller}</strong><small>{["2.4k", "1.8k", "980"][index]} items collected</small><ArrowRight size={18} /></div>)}</div></section>
+        <section className="seller-section" id="sellers" data-aos="fade-up"><div><p className="nft-eyebrow">TOP SELLERS</p><h2>Meet the<br /><em>creative orbit.</em></h2></div><div className="seller-list">{["Lina Park", "Niko Vale", "Maya Stone"].map((seller, index) => <div className="seller-row" data-aos="fade-right" data-aos-delay={(index + 1) * 100} key={seller}><span>0{index + 1}</span><strong>{seller}</strong><small>{["2.4k", "1.8k", "980"][index]} items collected</small><ArrowRight size={18} /></div>)}</div></section>
 
         <section className="nft-note" data-aos="fade-up"><p className="nft-eyebrow">A NOTE FROM THE MARKET</p><h2>Built for discovery.<br /><em>Designed for clarity.</em></h2><p>This course-spec study uses sample NFT content and a simulated wallet action. It does not connect a wallet, process transactions, or represent real marketplace activity.</p></section>
       </main>
@@ -97,7 +102,7 @@ export default function NFTMarketplace() {
 }
 
 function NftCard({ nft, index }: { nft: Nft; index: number }) {
-  return <article className="nft-card" data-aos="fade-up" data-aos-delay={Math.min(index * 60, 240)}><a href={`#/nft/${nft.id}`} className="nft-card-image"><img src={nft.image} alt={`${nft.title} digital artwork`} /><span className="nft-tag">{nft.category}</span></a><div className="nft-card-body"><div><h3><a href={`#/nft/${nft.id}`}>{nft.title}</a></h3><p>by {nft.creator}</p></div><strong>{nft.price}</strong></div></article>;
+  return <article className="nft-card" data-aos="fade" data-aos-delay={Math.min(index * 100, 600)}><a href={`#/nft/${nft.id}`} className="nft-card-image"><img src={nft.image} alt={`${nft.title} digital artwork`} /><span className="nft-tag">{nft.category}</span></a><div className="nft-card-body"><div><h3><a href={`#/nft/${nft.id}`}>{nft.title}</a></h3><p>by {nft.creator}</p></div><strong>{nft.price}</strong></div></article>;
 }
 
 function NftDetail({ nft }: { nft: Nft }) {

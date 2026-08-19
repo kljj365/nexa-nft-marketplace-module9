@@ -1,0 +1,100 @@
+=== ANIMATION TOKENS ===
+/tmp/ultraverse-main.css:animated
+/tmp/ultraverse-main.css:fadeIn
+/tmp/ultraverse-main.css:fadeInDown
+/tmp/ultraverse-main.css:fadeInDownBig
+/tmp/ultraverse-main.css:fadeInLeft
+/tmp/ultraverse-main.css:fadeInLeftBig
+/tmp/ultraverse-main.css:fadeInRight
+/tmp/ultraverse-main.css:fadeInRightBig
+/tmp/ultraverse-main.css:fadeInUp
+/tmp/ultraverse-main.css:fadeInUpBig
+/tmp/ultraverse-main.css:fadeOut
+/tmp/ultraverse-main.css:fadeOutDown
+/tmp/ultraverse-main.css:fadeOutDownBig
+/tmp/ultraverse-main.css:fadeOutLeft
+/tmp/ultraverse-main.css:fadeOutLeftBig
+/tmp/ultraverse-main.css:fadeOutRight
+/tmp/ultraverse-main.css:fadeOutRightBig
+/tmp/ultraverse-main.css:fadeOutUp
+/tmp/ultraverse-main.css:fadeOutUpBig
+/tmp/ultraverse-main.css:slideInDown
+/tmp/ultraverse-main.css:slideInLeft
+/tmp/ultraverse-main.css:slideInRight
+/tmp/ultraverse-main.css:slideInUp
+/tmp/ultraverse-main.css:wow-icons
+/tmp/ultraverse-main.css:wow-icons,.fpw-overlay-btm,.fullw
+/tmp/ultraverse-main.css:wow-icons{background:#fff;border-
+/tmp/ultraverse-main.css:wow{visibility:hidden}#back-to-to
+/tmp/ultraverse-main.css:zoomIn
+/tmp/ultraverse-main.css:zoomInDown
+/tmp/ultraverse-main.css:zoomInLeft
+/tmp/ultraverse-main.css:zoomInRight
+/tmp/ultraverse-main.css:zoomInUp
+/tmp/ultraverse-main.js:animated
+/tmp/ultraverse-main.js:data-wow-delay
+/tmp/ultraverse-main.js:data-wow-duration
+/tmp/ultraverse-main.js:data-wow-iteration
+/tmp/ultraverse-main.js:data-wow-offset
+/tmp/ultraverse-main.js:fadeIn
+/tmp/ultraverse-main.js:fadeInRight
+/tmp/ultraverse-main.js:fadeInUp
+/tmp/ultraverse-main.js:wow
+/tmp/ultraverse-main.js:wowEvent),this.util().addEvent(e,
+/tmp/ultraverse-main.js:wowEvent=this.util().createEvent(
+=== ROOT VARIABLES ===
+:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0))}
+:root{scroll-behavior:smooth}
+:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}
+:root .icofont-flip-horizontal,:root .icofont-flip-vertical,:root .icofont-rotate-180,:root .icofont-rotate-270,:root .icofont-rotate-90{display:inline-block;-webkit-filter:none;filter:none}
+:root{--primary-color:#403f83;--primary-color-rgb:64,63,131;--secondary-color:#8364e2;--secondary-color-rgb:131,100,226}
+=== FONT SOURCES ===
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@200
+font-family:Arial,Baskerville,monospace
+font-family:ElegantIcons
+font-family:FontAwesome
+font-family:Georgia
+font-family:Helvetica,Arial
+font-family:IcoFont
+font-family:IcoFont!important
+font-family:Inter,Arial,Helvetica,sans-serif
+font-family:Inter,Arial,Helvetica,sans-serifr
+font-family:Inter,Georgia,Times New Roman,Times,serif
+font-family:Miama
+font-family:Parisienne
+font-family:SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace
+font-family:SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace!important
+font-family:consolas,monospace
+font-family:et-line
+font-family:inherit
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji
+font-family:var(--body-font)
+font-family:var(--bs-font-monospace)
+font-family:var(--bs-font-monospace)!important
+font-family:var(--bs-font-sans-serif)
+font-family:var(--title-font)
+=== BREAKPOINTS ===
+@media (max-width:1199.98px)
+@media (max-width:1399.98px)
+@media (max-width:360px)
+@media (max-width:575.98px)
+@media (max-width:767.98px)
+@media (max-width:768px)
+@media (max-width:900px)
+@media (max-width:991.98px)
+@media (max-width:991px)
+@media (min-width:1200px)
+@media (min-width:1400px)
+@media (min-width:576px)
+@media (min-width:768px)
+@media (min-width:980px)
+@media (min-width:992px)
+@media (prefers-reduced-motion:no-preference)
+@media (prefers-reduced-motion:reduce)
+=== MOBILE NAV CLUES ===
+/tmp/ultraverse-main.css:menu-btn
+/tmp/ultraverse-main.css:navbar-collapse
+/tmp/ultraverse-main.css:navbar-toggler
+/tmp/ultraverse-main.css:offcanvas
+/tmp/ultraverse-main.css:sticky
+/tmp/ultraverse-main.js:menu-btn
