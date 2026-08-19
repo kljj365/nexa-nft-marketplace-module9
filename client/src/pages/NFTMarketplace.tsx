@@ -74,11 +74,7 @@ export default function NFTMarketplace() {
             <p>Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable</p>
             <a className="nft-primary" href="#marketplace">Explore <ArrowRight size={17} /></a>
           </div>
-          <div className="nft-hero-art" data-aos="zoom-in" data-aos-delay="120" aria-label="Illustration of a digital NFT cube">
-            <div className="cube"><span>NFT</span></div>
-            <span className="art-orbit orbit-one">◈</span><span className="art-orbit orbit-two">✦</span><span className="art-orbit orbit-three">◇</span>
-            <div className="art-node node-one">✓</div><div className="art-node node-two">○</div><div className="art-node node-three">▶</div>
-          </div>
+          <div className="nft-hero-art" data-aos="zoom-in" data-aos-delay="120"><img src="/reference-media/ultraverse-nft.png" alt="NFT cube connected to digital item cards" /></div>
         </section>
 
         <section className="nft-strip" aria-label="Marketplace categories"><span>TOP SELLERS</span><span>BROWSE BY CATEGORY</span><span>MARKETPLACE</span></section>
