@@ -206,7 +206,7 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: "/kjdm-virtual-internship-module9/",
+  base: "/nexa-nft-marketplace-module9/",
   plugins,
   resolve: {
     alias: {

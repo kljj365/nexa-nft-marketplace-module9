@@ -1,5 +1,5 @@
-import CineScope from "@/pages/CineScope";
+import NFTMarketplace from "@/pages/NFTMarketplace";
 
 export default function App() {
-  return <CineScope />;
+  return <NFTMarketplace />;
 }

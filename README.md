@@ -1,14 +1,14 @@
-# KJDM Market — Module 9 Virtual Internship Companion
+# Nexa NFT World — Module 9 Virtual Internship
 
-KJDM Market is an original React marketplace companion created from the visible Module 9 Virtual Internship cues. It is intentionally distinct from the course reference implementation and from the KJDM Growth Catalog business portfolio project.
+Nexa NFT World is a **separate course-spec React marketplace study** created in response to FES mentor feedback. It is not the original KJDM Market portfolio project. Its information architecture and visual direction are based on the provided FES example site, while the logo, artwork, sample content, and implementation are original.
 
-## Confirmed course-aligned coverage
+## Course-spec coverage
 
-The build includes a marketplace-style landing page, collection/category filtering, searchable item cards, hot collections, item exploration, route-safe item detail views, item metadata, author/desk context, and purposeful animation. AOS is used for scroll reveal and zoom treatments, with reduced-motion CSS safeguards and mobile animation suppression.
+The build includes a marketplace header with search, Home, Explore, and Connect wallet controls; a lavender NFT hero with Explore CTA; Top Sellers; Browse by Category; Marketplace / All NFTs; category filtering; six item cards; item-detail routes; creator and price metadata; responsive navigation and card grids; a newsletter/resource footer; and purposeful AOS animation with reduced-motion CSS safeguards.
 
 ## Truthful boundary
 
-The catalogue uses owner-authored sample product content. Prices are sample values; there is no live checkout, payment processing, customer review data, or claim of real sales performance. The item detail action explicitly identifies itself as a planning demo.
+This is a frontend course study with sample digital assets and simulated wallet/bid interactions. It does not connect a wallet, process transactions, represent real marketplace activity, use customer reviews, or claim real sales results.
 
 ## Local commands
 
@@ -19,6 +19,10 @@ pnpm run build
 pnpm run dev
 ```
 
-## Reviewer links after deployment
+## Reviewer links
 
-The planned GitHub Pages URL is `https://kljj365.github.io/kjdm-virtual-internship-module9/`. The planned source repository is `https://github.com/kljj365/kjdm-virtual-internship-module9`.
+Live project: `https://kljj365.github.io/nexa-nft-marketplace-module9/`
+
+Source repository: `https://github.com/kljj365/nexa-nft-marketplace-module9`
+
+Reference used for information architecture: `https://nft-marketplacee.web.app/`

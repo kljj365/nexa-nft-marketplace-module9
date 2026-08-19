@@ -1,31 +1,33 @@
 # Module 9 Virtual Internship — Mentor Review Packet
 
-## Submission links
+## Corrected submission links
 
-| Field | Value |
+| FES field | Value |
 |---|---|
-| Live project | https://kljj365.github.io/kjdm-virtual-internship-module9/ |
-| Source repository | https://github.com/kljj365/kjdm-virtual-internship-module9 |
-| Public branch | `gh-pages` |
+| Live project | https://kljj365.github.io/nexa-nft-marketplace-module9/ |
+| Source repository | https://github.com/kljj365/nexa-nft-marketplace-module9 |
+| Deployment branch | `gh-pages` |
 | Source branch | `main` |
 
 ## Requirement evidence
 
-| Module 9 cue | Frame Finder / KJDM Market implementation |
+| Mentor requirement | Nexa NFT World implementation |
 |---|---|
-| Marketplace-style landing page | Editorial KJDM Market hero with collection entry points and desk context |
-| Environment/setup cue | Standalone Vite React project with documented local commands and responsive layout |
-| Hot Collections | Four visible category collection cards with guide counts |
-| Item exploration | Searchable/filterable collection grid with six field-guide items |
-| Item details | Hash-routed detail page with included content, sample price, author note, and return navigation |
-| Animations | AOS scroll reveal/zoom treatments with reduced-motion CSS safeguards |
-| Responsive presentation | Mobile-first card grid, compact navigation, and detail-page reflow |
-| Truthful evidence | Explicit sample-catalog and planning-demo labels; no fabricated reviews, customer data, checkout, or sales outcomes |
+| Required Virtual Internship project | Separate course-spec NFT marketplace; original KJDM Market remains excluded from this submission. |
+| Marketplace landing page | White/lavender NFT marketplace shell with logo, search field, Home, Explore, Connect wallet, hero artwork, and Explore CTA. |
+| Browse/discovery structure | Top Sellers, Browse by Category, Marketplace / All NFTs, category controls, result count, and six NFT cards. |
+| Item exploration | Search input and category filters for Art, Music, Domain Names, Virtual World, and Collectibles. |
+| Item details | Hash-routed NFT detail page with artwork, category, title, creator, sample price, Place a bid CTA, and back navigation. |
+| Wallet interaction | Visible Connect wallet and Place a bid controls with explicit simulated-interaction notices; no wallet or transaction is connected. |
+| Animations | AOS reveal/zoom treatments plus reduced-motion CSS safeguards. |
+| Responsive behavior | Header navigation collapses at mobile width; grids collapse from three to two to one column; detail layout reflows. |
+| Footer and supporting sections | Top-seller rows, marketplace/resource links, newsletter field, and course-study boundary copy. |
+| Truthful evidence | Sample NFT content only; no fabricated reviews, customer records, real transactions, or sales claims. |
 
 ## Verification record
 
-The TypeScript check and production build passed. The public homepage and `#/item/signal-sprint` detail route were verified in the browser after GitHub Pages deployment. The original course cues are represented as an original KJDM implementation rather than a copied reference build.
+TypeScript validation and the production Vite build passed after the course-spec replacement. Browser verification confirmed the homepage, Explore marketplace hash, six-card collection content, `#/nft/orbit-01` detail route, and Back to marketplace navigation. The provided example `https://nft-marketplacee.web.app/` was observed read-only for information architecture and visual cues; proprietary branding and artwork were not copied.
 
 ## Student action
 
-The student must personally submit the live URL and repository URL through the FES Module 9 Final Project lesson and complete any required lesson, quiz, or mentor-review controls in the authenticated course portal.
+Kyle must personally paste the corrected live URL and repository URL into the authenticated FES Module 9 Final Project lesson and click Submit. The prior KJDM Market/portfolio submission must not be used for this review.
