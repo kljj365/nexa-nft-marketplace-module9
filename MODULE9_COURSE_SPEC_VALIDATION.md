@@ -15,3 +15,7 @@ The Explore marketplace CTA changes the URL to `#/marketplace` without leaving t
 ## Detail-route verification
 
 The public-shaped local route `#/nft/orbit-01` rendered the expected detail state: Back to marketplace link, category/DIGITAL ITEM label, Orbit Bloom title, creator, sample description, current price, Place a bid CTA, and Simulated interaction only notice. Returning through Back to marketplace restored the homepage and collection state. The wallet and bid controls are deliberately demo-only and do not connect to a wallet or process transactions.
+
+## Public deployment verification
+
+The dedicated GitHub Pages homepage `https://kljj365.github.io/nexa-nft-marketplace-module9/` rendered the Nexa NFT World course-spec marketplace with its purple-lavender hero, search, navigation, collection sections, sample cards, and boundary copy. The public detail route `#/nft/orbit-01` rendered Orbit Bloom with creator Lina Park, 2.40 ETH sample price, Place a bid CTA, Back to marketplace navigation, and the simulated-interaction notice.
