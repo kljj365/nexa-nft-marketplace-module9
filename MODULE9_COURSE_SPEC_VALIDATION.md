@@ -19,3 +19,17 @@ The public-shaped local route `#/nft/orbit-01` rendered the expected detail stat
 ## Public deployment verification
 
 The dedicated GitHub Pages homepage `https://kljj365.github.io/nexa-nft-marketplace-module9/` rendered the Nexa NFT World course-spec marketplace with its purple-lavender hero, search, navigation, collection sections, sample cards, and boundary copy. The public detail route `#/nft/orbit-01` rendered Orbit Bloom with creator Lina Park, 2.40 ETH sample price, Place a bid CTA, Back to marketplace navigation, and the simulated-interaction notice.
+
+## Interaction QA
+
+The public search field accepted `Orbit` and reduced the marketplace result count from six items to one matching item, Orbit Bloom. The page exposes category controls for All NFTs, Art, Music, Domain Names, Virtual World, and Collectibles. The public homepage also continues to show the course-spec boundary: sample content, simulated wallet action, no wallet connection, no transactions, and no real marketplace activity.
+
+The public `#marketplace` anchor exposed all six category buttons. Selecting `Art` changed the active control state and retained one matching item, Orbit Bloom, confirming category filtering works on the corrected course-spec deployment.
+
+## Replacement-specific responsive QA
+
+The corrected Nexa NFT World replacement was captured at 1440×900 and 1024×900. Desktop shows the full logo, search field, Home/Explore navigation, wallet demo CTA, two-column hero, category strip, and no visible overflow. Tablet preserves the same hierarchy with a narrower two-column hero, readable type, fitted navigation, and no visible horizontal overflow.
+
+The corrected Nexa NFT World replacement was also captured at 390×844. The mobile header switches to a compact menu icon, the search field remains usable, the hero becomes a single readable column, the Explore CTA remains visible, and the visual panel follows below without visible horizontal overflow.
+
+Source-level QA also confirms AOS initialization, category filtering, search filtering, hash-based item detail routing, simulated wallet and bid alerts, and reduced-motion CSS safeguards. The wallet/bid controls are intentionally demo-only and do not connect to external accounts or process transactions.
